@@ -76,6 +76,7 @@ A Laravel 12 project demonstrating Organisation, Location and Role management wi
 * Server-side validation
 * RESTful routes
 * Clean MVC architecture
+* Email Verification using BREVO
 
 ## 🧩 Modules
 
@@ -102,6 +103,7 @@ A Laravel 12 project demonstrating Organisation, Location and Role management wi
 * Laravel Breeze authentication
 * Login / Register
 * Middleware protected routes
+* Email verification using brevo
 
 ## 📊 DataTables
 
@@ -116,7 +118,7 @@ A Laravel 12 project demonstrating Organisation, Location and Role management wi
 * Bootstrap 5
 * jQuery
 * AJAX
-* DataTables
+* DataTables yajra
 * Laravel Breeze
 
 ## 📁 Project Setup
