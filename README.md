@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -57,3 +58,95 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Laravel 12 Organisation Management System
+
+A Laravel 12 project demonstrating Organisation, Location and Role management with modern UI and AJAX-based interactions.
+
+## 🚀 Features
+
+* Bootrsap5 theme integration
+* Organisation CRUD
+* Multiple Locations per Organisation
+* Role Management
+* Authentication using Laravel Breeze
+* AJAX-based form submission
+* Bootstrap Modal for Add/Edit
+* DataTables listing with search & pagination
+* Server-side validation
+* RESTful routes
+* Clean MVC architecture
+
+## 🧩 Modules
+
+### Organisation
+
+* Create Organisation
+* Edit Organisation
+* Delete Organisation
+* View Organisation list
+
+### Locations
+
+* Add multiple locations for organisation
+* AJAX modal popup
+* Update location modal
+* Delete location
+
+### Roles
+
+* Role CRUD
+
+## 🔐 Authentication
+
+* Laravel Breeze authentication
+* Login / Register
+* Middleware protected routes
+
+## 📊 DataTables
+
+* Server-side processing
+* AJAX loading
+
+## ⚡ Tech Stack
+
+* Laravel 12
+* PHP
+* MySQL
+* Bootstrap 5
+* jQuery
+* AJAX
+* DataTables
+* Laravel Breeze
+
+## 📁 Project Setup
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+
+## 🎯 Highlights
+
+* Modular CRUD structure
+* AJAX powered UI
+* Reusable modal components
+* Clean controller logic
+* Migration-based database setup
+
+## 👩‍💻 Author
+
+Laravel Developer
+PHP (Core) + CodeIgniter Experience
+Learning & implementing Laravel 12
+
+## 📌 Purpose
+
+This project is built to demonstrate practical Laravel development skills including CRUD operations, relationships, authentication, AJAX, and DataTables integration.
+
+>>>>>>> 5be4f91 (initial project upload)
