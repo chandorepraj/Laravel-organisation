@@ -1,13 +1,18 @@
 # Laravel 12 Organisation Management System
 
-A Laravel 12 project demonstrating Organisation, Location and Role management with modern UI and AJAX-based interactions.
+A modern Laravel 12 application for managing Organisations, Locations, and Roles with both Web UI and REST APIs.
+Built using AJAX interactions, Bootstrap UI, and token-based API authentication.
+
+---
 
 ## 🚀 Features
 
-* Bootrsap5 theme integration
-* Organisation CRUD
+* Bootstrap 5 admin theme integration
+* Organisation CRUD management
 * Multiple Locations per Organisation
 * Role Management
+* REST API with Bearer Token authentication
+* Laravel Sanctum API security
 * Authentication using Laravel Breeze
 * AJAX-based form submission
 * Bootstrap Modal for Add/Edit
@@ -15,39 +20,71 @@ A Laravel 12 project demonstrating Organisation, Location and Role management wi
 * Server-side validation
 * RESTful routes
 * Clean MVC architecture
-* Email Verification using BREVO
+* Email Verification using Brevo
+* API Resources for structured JSON responses
+
+---
 
 ## 🧩 Modules
 
-### Organisation
+### 🏢 Organisation
 
 * Create Organisation
 * Edit Organisation
 * Delete Organisation
 * View Organisation list
+* Organisation details with multiple locations
+* Created by user relation
 
-### Locations
+### 📍 Locations
 
-* Add multiple locations for organisation
+* Add multiple locations per organisation
 * AJAX modal popup
 * Update location modal
 * Delete location
+* Organisation → Locations relationship
 
-### Roles
+### 👥 Roles
 
 * Role CRUD
+* Role listing with DataTables
+* Role assignment support
+
+---
 
 ## 🔐 Authentication
 
 * Laravel Breeze authentication
 * Login / Register
 * Middleware protected routes
-* Email verification using brevo
+* Email verification using Brevo
+* API authentication using Laravel Sanctum
+* Bearer Token protected APIs
+
+---
+
+## 🔑 API Features
+
+* Login API with token generation
+* Organisation CRUD API
+* Location CRUD API
+* Role CRUD API
+* Protected routes using `auth:sanctum`
+* API Resources for response formatting
+* JSON based validation errors
+* Nested relations (Organisation → Locations → User)
+
+---
 
 ## 📊 DataTables
 
 * Server-side processing
 * AJAX loading
+* Pagination
+* Search & filtering
+* Sorting support
+
+---
 
 ## ⚡ Tech Stack
 
@@ -57,8 +94,12 @@ A Laravel 12 project demonstrating Organisation, Location and Role management wi
 * Bootstrap 5
 * jQuery
 * AJAX
-* DataTables yajra
+* Yajra DataTables
 * Laravel Breeze
+* Laravel Sanctum
+* Brevo (Email Service)
+
+---
 
 ## 📁 Project Setup
 
@@ -72,6 +113,8 @@ php artisan migrate
 php artisan serve
 ```
 
+---
+
 ## 🎯 Highlights
 
 * Modular CRUD structure
@@ -79,26 +122,46 @@ php artisan serve
 * Reusable modal components
 * Clean controller logic
 * Migration-based database setup
+* API + Web architecture
+* Eloquent relationships
+* Resource-based API responses
+* Sanctum token authentication
+
+---
+
+## 📌 API Authentication Example
+
+```
+Authorization: Bearer YOUR_TOKEN
+Accept: application/json
+```
+
+---
 
 ## 👩‍💻 Author
 
 Laravel Developer
 PHP (Core) + CodeIgniter Experience
 Learning & implementing Laravel 12
+Building REST APIs with Sanctum
+
+---
 
 ## 📌 Purpose
 
-This project is built to demonstrate practical Laravel development skills including CRUD operations, relationships, authentication, AJAX, and DataTables integration.
+This project demonstrates practical Laravel development skills including:
 
+* CRUD operations
+* Eloquent relationships
+* REST API development
+* Authentication & Authorization
+* AJAX UI interactions
+* DataTables integration
+* Resource-based API responses
+* Token-based API security
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📜 License
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the MIT license.

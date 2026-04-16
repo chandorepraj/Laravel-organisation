@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/get-states/{country_id}', [CountryController::class, 'getStates'])->name('get.states')->middleware(['auth', 'verified']);
 
 Route::resource('organisation_locations',OrganisationLocationController::class)->middleware(['auth','verified']);
-Route::get('organisation_locations-datatable',[OrganisationLocationController::class, 'datatable'])->name('organisation_locations.datatable')
+Route::get('organisation_locations/datatable/{id}',[OrganisationLocationController::class, 'datatable'])->name('organisation_locations.datatable')
  ->middleware(['auth','verified']);
 
 require __DIR__.'/auth.php';

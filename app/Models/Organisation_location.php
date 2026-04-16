@@ -27,6 +27,6 @@ class Organisation_location extends Model
     }
     public function organisation()
     {
-        return $this->belongsTo(User::class,'organisation_id','id');
+        return $this->belongsTo(Organisation::class,'organisation_id','id');
     }
 }

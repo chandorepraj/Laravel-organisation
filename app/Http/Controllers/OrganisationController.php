@@ -92,8 +92,8 @@ class OrganisationController extends Controller
         //
         $countries = Country::pluck('name', 'id');
         $states = [];
-        $locations = Organisation_location::where('organisation_id', $organisation->id);
-        return view('organisation.edit', compact('organisation','locations','countries','states'));
+        $organisation->load('organisation_location');
+        return view('organisation.edit', compact('organisation','countries','states'));
     }
 
     /**

@@ -25,6 +25,7 @@ class RoleStoreRequest extends FormRequest
     {
         return [
             'role' => 'required|string|max:255|unique:roles',
+            'created_by' => 'integer'
         ];
     }
 }

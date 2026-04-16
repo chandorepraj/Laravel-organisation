@@ -15,9 +15,10 @@ use App\Models\User;
 class OrganisationLocationController extends Controller
 {
     //
-    public function datatable()
+    public function datatable($organisation_id)
     {
-        $olocations = Organisation_location::query(['country','state','user']);
+        $olocations = Organisation_location::where('organisation_id', $organisation_id
+)->get();
         return DataTables::of($olocations)
             ->addIndexColumn()
             ->addColumn('created_by', function ($row) {

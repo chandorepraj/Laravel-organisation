@@ -90,7 +90,7 @@
 @include('organisation.organisation-location-modal')   
 @push('scripts')
 <script>
-var oLocationDatatableUrl = "{{ route('organisation_locations.datatable') }}";
+var oLocationDatatableUrl = "{{ route('organisation_locations.datatable',$organisation->id) }}";
 </script>
 <link rel="stylesheet"
 href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css">

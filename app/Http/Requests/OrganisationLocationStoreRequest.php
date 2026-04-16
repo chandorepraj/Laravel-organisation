@@ -29,6 +29,7 @@ class OrganisationLocationStoreRequest extends FormRequest
             'city' =>'required|string',
             'state' =>'required|string',
             'country' =>'required|string',
+            'created_by' => 'integer'
         ];
     }
 }
